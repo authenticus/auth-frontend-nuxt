@@ -51,7 +51,7 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {
-      config.resolve.alias["~utils"] = resolve(
+      config.resolve.alias["~shared"] = resolve(
         __dirname,
         "vendor/auth-frontend-shared"
       );
