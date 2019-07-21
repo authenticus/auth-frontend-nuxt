@@ -1,3 +1,5 @@
+import { resolve } from "path";
+
 export default {
   mode: "universal",
   /*
@@ -48,6 +50,11 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {
+      config.resolve.alias["~utils"] = resolve(
+        __dirname,
+        "vendor/auth-frontend-shared"
+      );
+    }
   }
 };
