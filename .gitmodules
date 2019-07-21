@@ -1,0 +1,3 @@
+[submodule "vendor/auth-frontend-shared"]
+	path = vendor/auth-frontend-shared
+	url = git@github.com:authenticus/auth-frontend-shared.git
